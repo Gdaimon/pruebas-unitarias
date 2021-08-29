@@ -58,5 +58,18 @@ public class Calculadora {
     public void clear(){
         this.anwser = 0;
     }
+    
+    public void operacionLenta(){
+        try{
+            Thread.sleep(2000);
+        }catch(InterruptedException e){
+            System.out.println("Entro");
+            e.printStackTrace();
+        }
+    }
+    
+    public void bufleInfinito(){
+        for(;;);
+    }
 
 }

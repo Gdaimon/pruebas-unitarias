@@ -119,4 +119,19 @@ public class CalculadoraTest {
         calculadora.dividir(numeroUno, numeroDos);
     }
     
+    //@Test(timeout = 300)
+    @Test(timeout = 3000)
+    public void operacionLenta(){
+        System.out.println("operacionLenta()");
+        calculadora.operacionLenta();
+    }
+    
+    @Test(timeout = 300)
+    public void bucleInfinito(){
+        System.out.println("bucleInfinito()");
+        calculadora.bufleInfinito();
+    }
+    
+    
+    
 }
